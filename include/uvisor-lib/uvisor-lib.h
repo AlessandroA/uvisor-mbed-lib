@@ -36,5 +36,6 @@
 /* The uVisor API main header file will use the above definitions. */
 #include "uvisor/api/inc/uvisor-lib.h"
 #include "uvisor_allocator.h"
+#include "uvisor_malloc.h"
 
 #endif /* __UVISOR_LIB_UVISOR_LIB_H__ */
