@@ -79,14 +79,8 @@ publish: rsync TARGET_M3 TARGET_M4
 
 uvisor: uvisor-compile publish
 
-uvisor-compile: $(UVISOR_GIT_CFG)
+uvisor-compile:
 	make -C $(UVISOR_DIR)
 
-$(NEO_PY):
-	git submodule update --init $(dir $@)
-
-$(UVISOR_GIT_CFG):
-	git submodule update --init $(UVISOR_DIR)
-
-clean: $(UVISOR_GIT_CFG)
+clean:
 	make -C $(UVISOR_DIR) clean
