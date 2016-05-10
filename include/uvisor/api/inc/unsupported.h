@@ -67,7 +67,7 @@ UVISOR_EXTERN const uint32_t __uvisor_mode;
 
 #define UVISOR_BOX_NAMESPACE(...)
 
-#define UVISOR_BOX_HEAPSIZE(...)
+#define UVISOR_BOX_HEAPSIZE(heap_size)
 
 /* uvisor-lib/interrupts.h */
 
